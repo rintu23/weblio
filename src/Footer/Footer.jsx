@@ -7,6 +7,7 @@ import {
   Phone, 
   MapPin 
 } from "lucide-react";
+import logo from "../assets/logow.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,12 +18,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="h-10 w-10 rounded-full bg-indigo-500 flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">WS</span>
-              </div>
-              <span className="font-bold text-2xl text-white">Weblio Solutions</span>
-            </div>
+          <div className="flex items-center space-x-3 mb-6">
+  <img  
+    src={logo}//r actual image path
+    alt=""
+    className="h-15 w-10rounded-full shadow-lg object-cover"
+  />
+  <span className="font-bold text-2xl text-white">Weblio Solutions</span>
+</div>
+
             <p className="mb-6 text-sm text-gray-400">
               Professional web development services tailored to your business needs. We create modern, responsive websites with cutting-edge technology.
             </p>
@@ -75,12 +79,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-indigo-400 shrink-0" />
-                <span>(+91) 98765 43210</span>
+                <span>(+91) 81296 51596</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-indigo-400 shrink-0" />
                 <a href="mailto:info@webliosolutions.com" className="hover:text-white transition">
-                  info@webliosolutions.com
+                  webliosolution@gmail.com
                 </a>
               </li>
             </ul>

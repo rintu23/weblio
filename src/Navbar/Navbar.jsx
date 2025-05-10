@@ -33,21 +33,24 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navlinks.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="relative px-4 py-2 text-sm font-medium text-white hover:text-white transition duration-300 group"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 group-hover:scale-105"></span>
-                <span className="relative z-10">{item.label}</span>
-              </a>
+             <a
+             key={item.label}
+             href={item.href}
+             className="relative px-4 py-2 text-sm font-medium text-white transition-all duration-300 group "
+           >
+             <span className="absolute inset-0 left-0 top-0 w-0 h-full bg-blue-500 z-0 transition-all duration-300 group-hover:w-full"></span>
+             <span className="relative z-10 group-hover:text-black">{item.label}</span>
+           </a>
+           
             ))}
-            <a
-              href="/contact"
-              className="ml-4 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-md text-sm font-semibold hover:brightness-110 transition duration-300 shadow-md"
-            >
-              Get In Touch
-            </a>
+           <a
+  href="#contact"
+  className="relative ml-4 px-4 py-2 text-sm font-semibold text-white rounded-md border border-transparent overflow-hidden group transition-all duration-300"
+>
+  <span className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-blue-500 to-indigo-500 z-0 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+  <span className="relative z-10 group-hover:text-black">Get In Touch</span>
+</a>
+
           </nav>
 
           {/* Mobile Menu Button */}

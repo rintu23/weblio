@@ -42,10 +42,10 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-100">
+    <section id="services" className="py-24 bg-[#121212] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-900">Our Services</h2>
+          <h2 className="text-4xl font-extrabold text-blue-900">Our Services</h2>
           <p className="mt-3 text-lg text-gray-600">We offer a wide range of digital solutions</p>
         </div>
 
@@ -55,7 +55,7 @@ export default function ServicesSection() {
               key={index}
               data-aos="zoom-in"
               data-aos-delay={index * 100}
-              className="group bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-transparent hover:bg-gradient-to-br from-blue-100/40 to-indigo-100/60 transition-all duration-300 transform hover:-translate-y-1"
+              className="group bg-[#a0a0a0] p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-transparent hover:bg-gradient-to-br from-blue-100/40 to-indigo-100/60 transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-500 text-white rounded-xl flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform duration-300">
                 {service.icon}

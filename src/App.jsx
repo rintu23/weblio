@@ -15,10 +15,13 @@ import { useEffect } from 'react';
 function App() {
  
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   return (
+    <div className="bg-[#121212] min-h-screen text-white">
+   
+   
     <>
      <Navbar/>
      <Home/>
@@ -27,6 +30,7 @@ function App() {
      <ContactPage/>
      <Footer/>
     </>
+    </div>
   )
 }
 

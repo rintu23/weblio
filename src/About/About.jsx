@@ -30,12 +30,12 @@ import {
     ];
   
     return (
-      <section id="about" className="py-20 bg-gradient-to-b from-white to-blue-50"  data-aos="fade-right">
+      <section id="about" className="py-20 bg-[#121212] text-white"  data-aos="fade-right">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 items-center">
             {/* About Content */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-3xl font-bold text-blue-900 mb-2">
                 About Weblio Solutions
               </h2>
               <p className="text-lg text-gray-600 mb-6">
@@ -75,42 +75,43 @@ import {
   
             {/* Stats */}
             <div className="mt-12 lg:mt-0">
-              <div className="bg-white rounded-xl shadow-lg p-8 transition hover:shadow-xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Our Achievements
-                </h3>
-                <div className="grid grid-cols-2 gap-6 sm:grid-cols-2">
-                  {stats.map((stat, index) => (
-                    <div key={index} className="text-center">
-                      <div className="flex justify-center mb-2">{stat.icon}</div>
-                      <div className="text-3xl font-extrabold text-gray-900">
-                        {stat.value}
-                      </div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
-  
-                <div className="mt-8 pt-6 border-t border-gray-200">
-                  <h4 className="font-semibold text-gray-900 mb-4">
-                    Why Choose Us?
-                  </h4>
-                  <ul className="space-y-3">
-                    {[
-                      "Expert team with diverse skills",
-                      "Tailored solutions for your business",
-                      "Transparent communication",
-                      "On-time and on-budget delivery",
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+  <div className="rounded-xl shadow-lg p-8 transition hover:shadow-xl bg-[#a0a0a0]">
+    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+      Our Achievements
+    </h3>
+    <div className="grid grid-cols-2 gap-6 sm:grid-cols-2">
+      {stats.map((stat, index) => (
+        <div key={index} className="text-center">
+          <div className="flex justify-center mb-2">{stat.icon}</div>
+          <div className="text-3xl font-extrabold text-gray-900">
+            {stat.value}
+          </div>
+          <div className="text-sm text-gray-600">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-8 pt-6 border-t border-gray-300">
+      <h4 className="font-semibold text-gray-900 mb-4">
+        Why Choose Us?
+      </h4>
+      <ul className="space-y-3">
+        {[
+          "Expert team with diverse skills",
+          "Tailored solutions for your business",
+          "Transparent communication",
+          "On-time and on-budget delivery",
+        ].map((item, idx) => (
+          <li key={idx} className="flex items-start">
+            <CheckCircle className="h-5 w-5 text-green-500 mr-2 shrink-0 mt-1" />
+            <span className="text-gray-700">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
